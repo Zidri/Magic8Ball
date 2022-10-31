@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+/*Colors: https://coolors.co/003333-5c80bc-6d1a36-8f4152-fcf7f8*/
+
+body {
+    background-color: #F1F7EE;
+    padding: 10px;
+}
+
+h1 {
+    color: #FCF7F8;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 150%;
+    margin: 0;
+}
+
+h2 {
+    color: #FCF7F8;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header {
+    background-color: #6D1A36;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px;
+}
+
+/*8 ball*/
+/*Background*/
+.circle {
+    /* max-width: 80%; */
+    height: 30rem;
+    width: 30rem;
+    background-color: #003333;
+    border-radius: 50%;
+    margin: 25px;
+
+    /*center contents*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*answer display*/
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-style: inset;
+    border-width: 0 100px 173.2px 100px;
+    border-color: transparent transparent #5C80BC transparent;
+    float: left;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+
+    /*center text*/
+    display: flex;
+    justify-content: center;
+}
+
+.answer {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+
+    top: 150px;
+    position: relative;
+    /* width: 200px; */
+    margin: 0;
+    padding: 0;;
+
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+
+    display: none;
+}
+
+/*buttons*/
+.buttonDisplay {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: #6D1A36;
+    font-size: 1rem;
+    width: 110px;
+    min-height: 50px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: black solid 1px;
+    margin: 2px 2px;
+    color: #FCF7F8;
+}
+
+.btn:hover {
+    background-color: #8F4152;
+}
